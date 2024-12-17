@@ -1,0 +1,128 @@
+body, .app {
+    background-color: #fff; /* White background */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    margin-bottom: 0;
+    font-family: 'Poppins', sans-serif; /* Ensure consistent font */
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(41, 41, 41, 0.1);
+    z-index: 10;
+    position: relative;
+  }
+  
+  .navbar-logo {
+      width: 185px; /* Adjust the width as needed */
+      height: auto; /* Maintains the aspect ratio */
+  }
+  
+  .navbar-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .icon {
+    padding: 0.5rem;
+    background-color: white;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon :hover{
+    background-color: #5e7ff4;
+    border-radius: 50%;
+  }
+  
+  .icon-image {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+  }
+  
+  
+  /* Layout styles */
+  .content {
+    display: flex;
+  }
+  
+  /* Main content area */
+  .main-content {
+    padding-top: 0px;
+    margin: 0;
+    margin-top: 0px;
+    height: calc(100vh - 60px); /* Adjust to exclude the height of the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1.7px solid #ededed;
+  }
+  
+  .manage-data-button {
+    position: absolute; /* Allows positioning over the SVG */
+    bottom: 60px; /* Positions the button 20px above the bottom of the .main-content */
+    left: 50%; /* Centers the button horizontally */
+    transform: translateX(-50%); /* Offsets the button to truly center it */
+    background-color: #5e7ff4; /* Default button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Makes the button rounded */
+    padding: 10px 20px; /* Adjusts button size */
+    font-size: 16px; /* Text size */
+    font-weight: bold; /* Makes the text bold */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .manage-data-button:hover {
+      background-color: #4864c7; /* Darker blue on hover */
+  }
+  
+  
+  /* Fade images effect */
+  .fade-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Initially hidden */
+  }
+  
+  .fade-image.visible {
+    opacity: 1; /* Show the image when it's the active one */
+  }
+  
+  .agila-description {
+    padding: 20px;
+    padding-bottom: 80px;
+    background-color: #fff;
+    color: #333;
+    max-width: 800px;
+    margin: 40px auto; /* Center the text block */
+    text-align: center; /* Center the text */
+    margin-bottom: 0;
+  }
+  
+  .agila-description h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .agila-description p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  

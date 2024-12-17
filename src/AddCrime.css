@@ -1,0 +1,256 @@
+/* Import the fonts */
+@import url("@fontsource/poppins/index.css");
+@import url("@fontsource/syncopate/index.css");
+@import '@fontsource/poppins/index.css';
+@import '@fontsource/syncopate/index.css';
+
+
+
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefdfd;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(40, 40, 40, 0.1);
+  z-index: 1;
+}
+
+.navbar-logo {
+    width: 185px; /* Adjust the width as needed */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.icon {
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon :hover{
+  background-color: #5e7ff4;
+  border-radius: 50%;
+}
+
+.icon-image {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+}
+
+/* Layout styles */
+.content {
+  display: flex;
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 18%;
+  padding: 1rem;
+  font-family: 'Syncopate', sans-serif;
+  border-right: 1px solid #d1d1d1;
+  font-size: 24px;
+  text-align:left;
+  padding-left: 25px;
+  background-color: #fefdfd;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+
+.sidebar p{
+    font-family: 'Syncopate', sans-serif;
+    font-size: 15px;
+    text-align:justify;
+    padding-left: 20px;
+    padding-right: 28px;
+    padding-top: 2px;
+}
+
+.data-button {
+    margin-top: 15px; /* Adds space above the button */
+    align-self: flex-start; /* Ensures the button stays aligned to the left */
+    background-color: #5e7ff4; /* Default button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Button size */
+    font-size: 14px; /* Text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+  }
+
+  .data-buttonA {
+    margin-top: 15px; /* Adds space above the button */
+    align-self: flex-start; /* Ensures the button stays aligned to the left */
+    background-color: #5e7ff4; /* Default button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 25px; /* Rounded corners */
+    padding: 10px 20px; /* Button size */
+    font-size: 14px; /* Text size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-family: 'Poppins', sans-serif;
+    margin-left: 50px;
+  }
+
+  .data-buttonA:hover {
+    background-color: #4d6ec7; /* Darker blue on hover */
+  }
+
+  
+  .data-button:hover {
+    background-color: #4d6ec7; /* Darker blue on hover */
+  }
+
+/* Main content styles */
+
+.main-content {
+    display: flex; /* Use flexbox to position children side by side */
+    justify-content: space-around; /* Add space between the form and the uploader */
+    align-items: flex-start; /* Align the form and uploader to the top */
+    flex-wrap: wrap; /* Ensure they stack on smaller screens */
+    gap: 20px; /* Add spacing between the form and uploader */
+    padding: 0px;
+    background-color: #fefdfd;
+    padding-top: 102px;
+    height: 150px;
+    flex-direction: row;
+  }
+  
+  /* AddDengueData.css */
+  .form-container {
+    width: 48%; /* Take up roughly half of the content area */
+    max-width: 500px;
+    min-width: 400px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+    flex: 1;
+    margin-top: 60px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5e7ff4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .submit-button:hover {
+    background-color: #4864c7;
+  }
+  
+  .submit-button:active {
+    background-color: #4864c7;
+  }
+  
+  /* CSV Uploader styles */
+  .csv-uploader-section {
+    width: 48%; /* Take up roughly half of the content area */
+    min-width: 250px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    flex: 1;
+    margin-top: 180px;
+    margin-left: -130px;
+    padding-right: 35px;
+  }
+
+  .csv-uploader-section h2{
+    margin-left: 22px;
+  }
+  
+  .csv-input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .csv-upload-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #5e7ff4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    margin-left: 28px;
+  }
+  
+  .csv-upload-button:hover {
+    background-color: #4864c7;
+  }
+  
+  .csv-upload-button:active {
+    background-color: #4864c7;
+  }
+  
+  h2 {
+    font-family: "Poppins", sans-serif;
+  }
+
+  .form-label{
+    font-size: 13px;
+  }
+  
